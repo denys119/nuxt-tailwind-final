@@ -1,19 +1,19 @@
 <template>
-  <div>
-    <div>
-      <h1>
+  <div class="flex flex-col items-center">
+    <div class="flex items-center bg-bgGray px-4 py-5 flex-col">
+      <h1 class="text-2xl font-bold font-Poppins">
         Features
       </h1>
-      <p>
+      <p class="text-center font-semibold text-textColor font-Poppins">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium earum, cupiditate voluptas repellat inventore ipsum similique fugit aliquam quidem eum praesentium error possimus?
       </p>
     </div>
-    <base-content v-for="content in cardsContent" :key="content.title" :content="content" />
+    <base-content v-for="content in featuresContent" :key="content.title" :content="content" />
   </div>
 </template>
 
 <script setup>
-const cardsContent = [
+const featuresContent = [
   {
     title: 'Bigger size',
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium earum, cupiditate voluptas repellat inventore ipsum similique fugit aliquam quidem eum praesentium error possimus?',

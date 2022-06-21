@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <h1>
+  <div class="bg-bgGray flex flex-col items-center py-5">
+    <h1 class="text-2xl font-bold font-Poppins">
       Frequently Asked Questions
     </h1>
-    <p>
+    <p class="text-center font-semibold text-textColor font-Poppins">
       Here are some of our FAQs. If you have any other questions feel free to email us.
     </p>
     <base-faq v-for="faq in faqs" :key="faq.title" :faq="faq" />
-    <button>
+    <button class="font-semibold bg-bgOrange p-2 rounded-full hover:bg-bgHoverOrange transition-all mt-4 font-Poppins">
       More info
     </button>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <base-nav />
     <slot />
     <base-footer />
